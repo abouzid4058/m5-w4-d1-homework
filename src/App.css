@@ -1,0 +1,58 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   App.css — Custom styles for React Weather App
+   (Supplements Bootstrap classes defined in App.js)
+───────────────────────────────────────────────────────────────────────────── */
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 16px 0;
+}
+
+/* ── Weather icon from OpenWeatherMap ────────────────────────────────────── */
+/* Specified in homework PDF: width 100px */
+.weather-icon {
+  width: 100px;
+}
+
+/* ── Weather card sizing ─────────────────────────────────────────────────── */
+/* Specified in homework PDF: width 40em */
+.container .card {
+  width: 40em;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+/* Specified in homework PDF */
+.footer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ── Body: ensure footer doesn't overlap content ─────────────────────────── */
+body {
+  padding-bottom: 60px;
+  background-color: #f8f9fa;
+}
+
+/* ── FontAwesome icon spacing fix ────────────────────────────────────────── */
+/* Bootstrap 5 removed some spacing utilities — this compensates */
+.fas.mr-2,
+svg.mr-2 {
+  margin-right: 6px;
+}
+
+/* ── Responsive: shrink card on small screens ────────────────────────────── */
+@media (max-width: 600px) {
+  .container .card {
+    width: 100%;
+  }
+}
